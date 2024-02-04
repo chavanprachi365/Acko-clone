@@ -4,8 +4,334 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acko</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<link rel="stylesheet" href="/style.css">
+
 </head>
 <body>
     
+    <div style="background-color: #5920C5; display: flex; " class="pbackground">
+        <header   style="justify-content: space-between; width: 100%;" class="p-container d-flex pt-0 ">
+            <div style="display: flex; justify-content: space-between; width: 60%; " class="c-left ">
+                <nav>
+                    <ul style="display: flex; justify-content: space-between; list-style: none; align-items: center; gap: 6;  text-decoration: none; ">
+                        <li style="margin-left:70px ;">
+                            <a style="color: white; border-radius: 100px 200px;" href="">
+                                <img style="height: 150pxpx; width: 90px;   " src="/acko logo.png" alt="">
+                            </a>
+                        </li>
+                        <li style="margin-left:70px ;">
+                            <a style="color: white;text-decoration: none; font-size: 16px; " href="">
+                                products <i style="font-size: 10px;" class="fa fa-chevron-down" aria-hidden="true"></i>
+
+                            </a>
+                        </li>
+                        <li style="margin-left:70px ;">
+                            <a style="color: white; text-decoration: none;font-size: 16px; " href="">
+                                renewals <i style="font-size: 10px;" class="fa fa-chevron-down" aria-hidden="true"></i>
+
+                            </a>
+                        </li>
+                        <li style="margin-left:70px ;">
+                            <a style="color: white;text-decoration: none;font-size: 16px; " href="">
+                                Claims <i style="font-size: 10px;" class="fa fa-chevron-down" aria-hidden="true"></i>
+
+                            </a>
+                        </li>
+                        <li style="margin-left:70px ;">
+                            <a style="color: white;text-decoration: none;font-size: 16px; " href="">
+                                Resources <i style="font-size: 10px;" class="fa fa-chevron-down" aria-hidden="true"></i>
+
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+            <div  style=" display: flex; justify-content: space-between;  align-items: center; width: 15%; margin-right: 200px;" class="c-right">
+                <button style="background-color: #F8F7FC; border-radius: 10px;width: 100px; height: 50px;" class="bt-white"> Login</button>
+                <button  style="background-color: #0B753E; border-radius: 10px; width:100px  ;  border-style: none; height: 50px; color: white;" class="bt-dark"> sign in</button>
+            </div>
+        </header>
+    </div>
+    <main>
+        <div style="background-color:#5920C5;   " class="pbackground">
+            <section style="display: flex; width: 35%; margin: auto;  padding: auto; " class="b-services">
+                <div  class="b-box">
+                    <div style="justify-content: center; border-radius: 80%; align-items: center; background-color: #481AA4; " class="icon text-white">
+                        <i id="car" class="fa fa-car" aria-hidden="true"></i>
+
+                    </div>
+                    <h6 class="text-white">Car</h6>
+                </div>
+                <div  class="b-box">
+                    <div style=" justify-content: center;border-radius: 80%; align-items: center; background-color: #481AA4;" class="icon text-white">
+                        <i id="bike" class="fa fa-motorcycle" aria-hidden="true"></i>
+
+                    </div>
+                    <h6 class="text-white">bike</h6>
+                </div>
+                <div   class="b-box">
+                    <div style="background-color: #4A1F9E; justify-content: center; border-radius: 50%;align-items: center; " class="icon text-white">
+                      
+                        <i id="health" class="fa fa-medkit" aria-hidden="true"></i>
+                    </div>
+                    <h6 class="text-white">health</h6>
+                </div>
+                <div   class="b-box">
+                    <div style="background-color: #4A1F9E;justify-content: center; border-radius: 50%;align-items: center; " class="icon text-white">
+                       
+                        <i id="life" class="fa fa-heart" aria-hidden="true"></i>
+                    </div>
+                    <h6 class="text-white">life</h6>
+                </div>
+                <div   class="b-box">
+                    <div style="background-color: #4A1F9E;justify-content: center;border-radius: 50%;align-items: center; " class="icon text-white">
+                        <i id="travel" class="fa fa-plane" aria-hidden="true"></i>
+
+                    </div>
+                    <h6 class="text-white">travel</h6>
+                </div>
+                
+            </section>
+             <!-- car banner -->
+            <section   style="display: flex; justify-content: space-between;  " class="p-car-service-banner d-none ">
+                <div style="width: 25%;"  class="image-left">
+                    <img style=" width: 100%; margin-top: 45px ; height: 90%; " src="/saif.png" alt="">
+                </div>
+               <div style="width: 35%;padding: 10px; margin: 30px;  " class="p-box-centre">
+                 <div style="border-radius: 10px; width: 100%; background-color:#481AA4; padding: 30px; " class="p-box-form">
+                    <form action="">
+                        <h4 style="color: white; text-align: center; padding: 5px; font-weight: bold;  " class="text">
+                            Get up to 85% off on car insurance
+                        
+                        </h4>
+                        <div style="border-radius: 10px; margin-top:30px ;margin-left: 10px; "  class="input-box d-flex bg-white p-3">
+                            <input
+                             type="text"
+                             placeholder="enter your car number"
+                             style="flex: 1; width: 50%; height: 50px; border-radius: 10px;outline: none; border: none;"
+                           
+                             >
+                             <button style="border: none;width: 150px;height: 50px;border-radius: 10px;background-color:#0FA457  ; color: white; " class="button " > Get qoute
+                             </button>
+                            
+                        </div>
+
+                        
+                    </form>
+                    
+                 </div>
+                 <div style="height: 80px;display: flex; justify-content: space-between; text-align: center; background-color: #481AA4;width: 100%;border-radius: 10px;padding: 15px;" class="p-box-bottom mt-4 d-flex">
+                    <div style= "background-color: #703BD9;width: 45px;border-radius: 10px;padding: 14px;height: 50px;" class="car-icon">
+                        <i  class="fa fa-car text-white" aria-hidden="true"></i>
+
+
+                    </div>
+                    <div style="color: white;line-height: 10px;" class="text">
+                        <h6> looking  to insure brand new car?</h6>
+                        <p> zero commissions,big saving</p>
+                    </div>
+                    <div  class="button">
+                        <button style="border-radius: 5px; border-color: white; height:40px  ; width: 100px; background-color:#481AA4 ; color: white; padding: 5px;" class="button px-1"> check prices </button>
+                    </div>
+                    
+                </div>
+
+               </div>
+               <div style="width: 25%;" class="image-right">
+                <img style="width: 100%; height: 90%; margin-top: 45px;" src="/sara ali khan.png" alt="">
+               </div>
+    
+            </section>
+            <!-- bike banner-->
+            <section style="justify-content: space-between;" class="p-bike-service-banner d-none  d-flex ">
+                <div style="width: 30%;"  class="image-left">
+                    <img style=" width: 100%; margin-top: 45px ; height: 90%; " src="/balloon.svg" alt="">
+                </div>
+                <div style="width: 35%;padding: 10px; margin: 30px; " class="p-box-centre">
+                    <div style="border-radius: 10px; width: 100%; background-color:#481AA4; padding: 30px; " class="p-box-form">
+                       <form action="">
+                           <h4 style="color: white; text-align: center; padding: 5px; font-weight: bold;  " class="text">
+                            Bike insurance starting at ₹555
+                        </h4>
+                           
+                           </h4>
+                           <div style="border-radius: 10px; margin-top:30px ;margin-left: 10px; "  class="input-box d-flex bg-white p-3">
+                               <input
+                                type="text"
+                                placeholder="enter your car number"
+                                style="flex: 1; width: 50%; height: 50px; border-radius: 10px;outline: none; border: none;"
+                              
+                                >
+                                <button style="border: none;width: 150px;height: 50px;border-radius: 10px;background-color:#0FA457  ; color: white; " class="button " > Get qoute
+                                </button>
+                               
+                           </div>
+   
+                           
+                       </form>
+                    </div>
+                    <div style="height: 80px;display: flex; justify-content: space-between; text-align: center; background-color: #481AA4;width: 100%;border-radius: 10px;padding: 15px;" class="p-box-bottom mt-4 d-flex">
+                       <div style= "background-color: #703BD9;width: 45px;border-radius: 10px;padding: 14px;height: 50px; color: white;" class="car-icon">
+                        <i class="fa fa-motorcycle" aria-hidden="true"></i>
+                        
+   
+   
+                       </div>
+                       <div style="color: white;line-height: 10px;" class="text">
+                           <h6> looking  to insure brand new car?</h6>
+                           <p> zero commissions,big saving</p>
+                       </div>
+                       <div  class="button">
+                           <button style="border-radius: 5px; border-color: white; height:40px  ; width: 100px; background-color:#481AA4 ; color: white; padding: 5px;" class="button px-1"> check prices </button>
+                       </div>
+                       
+                   </div>
+   
+                  </div>
+                  <div style="width: 30%;  " class="image-right">
+                   <img style="width: 100%; height: 90%; margin-top: 45px; gap: 6;  " src="/bike right.svg" alt="">
+                  </div>
+            /
+
+
+            </section>
+            <!--  health banner-->
+            <section style="justify-content: space-between; padding: 10px; margin: 30px;" class="p-health-service-banner d-flex d-none">
+                <div style="width: 25%;"  class="image-left">
+                    <img style=" width: 90%; margin-top: 45px ; height: 90%; " src="/Sanju-9d00bfef2027e3d9888ed79582035fc2.png" alt="">
+                </div>
+            
+            <div  style="width: 35% ;"  class="p-box-centre pb-5">
+              <div style="background-color: #481AA4; width: 100%; border-radius: 10px;" class="b_center_form b_bg_primary2 p-3 py-4">
+                <form action="">
+                  <div
+                    class="bg-white mx-auto p-1 rounded-pill px-3"
+                    style="width: max-content"
+                  >
+                    <small class="b_text_gradient" style="font-size: 12px"
+                      >ACKO Platinum Health Plan</small
+                    >
+                  </div>
+                  <h4 class="text-white text-center mt-4 fw-bold">
+                    India’s #1 health plan
+                  </h4>
+                  <p class="text-center fw-bold text-white mb-4 mt-2">
+                    rated by <span style="color: #f99d1c">mint</span>
+                  </p>
+                  <div class="text-center">
+                    <button class="btn btn-success px-5 py-2">
+                      Check Prices
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <div
+                 style="width: 100%;" class="b_center_form b_bg_primary2 p-3 mt-3 text-white d-flex gap-3" >
+                <div class="b_icon b_bg_primary">
+                  <img width="100%" src="/images/logo.svg" alt="" />
+                </div>
+                <div style="background-color: #481AA4; border-radius: 10px; width: 100%; height: 80px; display: flex; padding: 10px; justify-content: space-between; align-items: center; " class="b_content">
+                    <div style="align-items: center;" class="bottom icon">
+                        <img style="height: 30px; display: flex; align-items: center;" src="/acko logo.jpg" alt="">
+                    </div>
+                  <h6>Corporate health policy from ACKO?</h6>
+                  <h6 style="cursor: pointer">
+                    Install App
+                    <i
+                      class="fa fa-chevron-right"
+                      style="font-size: 10px"
+                      aria-hidden="true"
+                    ></i>
+                  </h6>
+                </div>
+              </div>
+            </div>
+            <div style="width: 25%;"  class="image-left">
+                <img style=" width: 90%; margin-top: 45px ; height: 90%; " src="/circuit.png" alt="">
+            </div>
+
+  
+                
+            </section>
+            <!-- life banner-->
+            <section style="justify-content: space-between;" class="p-life-service-banner d-flex d-none">
+                <div style="width: 23%;" class="left-side">
+                    <img src="/Life-left-fb83d76bab399b57765686649ccbd906.svg" alt="">
+                </div>
+                <div style="background-color: #481AA4; height: 250px; width: 35%; border-radius: 10px; margin: 30px; padding: 10px;" class="p-box-centre">
+                    <div
+                      class="b_center_form b_bg_primary2 p-3 py-4 text-center text-white"
+                    >
+                      <form action="">
+                        <h4 class="text-white text-center mt-4 fw-bold">
+                          Comming Soon
+                        </h4>
+                        <p
+                          style="font-size: 15px"
+                          class="text-center text-white mb-4 mt-2"
+                        >
+                          Life insurance is about to get a whole lot better
+                        </p>
+                        <div class="text-center">
+                          <button class="btn btn-success rounded-3 px-5 py-2">
+                            Get Early Access
+                          </button>
+                        </div>
+                      </form>
+                      <span style="font-size: 8px"
+                        >A product of ACKO Life Insurance -
+                        ARN:ALIL/2023-24/09/001</span
+                      >
+                    </div>
+                  </div>
+                  <div style="width: 20%;  " class="right-side">
+                    <img src="/Life-right-65f2e2950d18e238afa14e005d0fda11.svg" alt="">
+                     </div>
+
+            </section>
+            <!--travel banner-->
+            <section style="justify-content: space-between;" class="p-travel-service-banner d-flex d-none">
+                <div  style="width: 20%;" class="left-img">
+                    <img src="/balloon.svg" alt="">
+                </div>
+                <div style="background-color: #481AA4; height: 250px; width: 35%; border-radius: 10px; padding: 10px; margin: 30px; justify-content: space-between;" class="p-box-centre">
+                    <div
+                      class="b_center_form b_bg_primary2 p-3 py-4 text-center text-white"
+                    >
+                      <form action="">
+                        <h4 class="text-white text-center mt-4 fw-bold">
+                          Dreaming of stress-free <br />
+                          travels? We made it real.
+                        </h4>
+                        <p
+                          style="font-size: 15px"
+                          class="text-center text-white mb-4 mt-2"
+                        >
+                          International Travel Insurance <br />
+                          starting at <span class="fw-bold">Rs. 10/day</span>
+                        </p>
+                        <div class="text-center">
+                          <button class="btn btn-success rounded-3 px-5 py-2">
+                            Explore Now
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div style="width: 20%;" class="right-img">
+                    <img src="/Travel-right-desktop-6e8d139ba3b2b64fb6a55201ac98205e (1).svg" alt="">
+                  </div>
+
+            </section>
+        
+        </div>
+        
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+ <script src="/index.js"></script>
 </body>
 </html>

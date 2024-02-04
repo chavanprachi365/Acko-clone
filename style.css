@@ -1,0 +1,42 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.pbackground .p-container{
+    display: flex;
+}
+.b-services .icon{
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    display: flex;
+    
+}
+.b-services .b-box {
+    margin-top: 6px;
+    text-align: center;
+    
+}
+.b-services{
+    justify-content: space-between;
+    cursor: pointer;
+}
+.b-services .icon.active{
+    background: white !important;
+    color: black !important;
+
+
+}
+.p-box-centre{
+    animation: toBanners 1s forwards;
+}
+@keyframes toBanners{
+    0% {
+        opacity: 0;
+        transform: translateY(70px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
